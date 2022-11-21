@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="18dp"
+    android:layout_marginVertical="14dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="381dp"
+        android:layout_height="165dp">
+
+
+        <TextView
+            android:id="@+id/Nombre"
+            android:layout_width="201dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="16dp"
+            android:text="Nombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.78"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Altura"
+            android:layout_width="107dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="24dp"
+
+
+            android:text="Altura: "
+            app:layout_constraintEnd_toStartOf="@+id/ResultadoAltura"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nombre" />
+
+        <TextView
+            android:id="@+id/ResultadoAltura"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nombre" />
+
+        <TextView
+            android:id="@+id/NPeliculas"
+            android:layout_width="117dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:text="Nº peliculas: "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Altura" />
+
+        <TextView
+            android:id="@+id/ResultadoNPeliculas"
+            android:layout_width="182dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.282"
+            app:layout_constraintStart_toEndOf="@+id/NPeliculas"
+            app:layout_constraintTop_toBottomOf="@+id/ResultadoAltura" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
